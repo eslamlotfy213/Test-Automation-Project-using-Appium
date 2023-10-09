@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QAcart_To_Do_Test_Framework">
+    <listeners><listener class-name="com.QAcart.listeners.TestListeners"></listener></listeners>
+    <test name="RegressionTests">
+        <parameter name="PLATFORM_NAME"    value="Android"/>
+        <parameter name="DEVICE_NAME"      value="sdk"/>
+        <parameter name="PLATFORM_VERSION" value="11"/>
+        <classes>
+            <class name="com.QAcart.TestCases.LoginTestCase"/>
+        </classes>
+    </test>
+</suite>
